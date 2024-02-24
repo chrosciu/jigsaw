@@ -8,6 +8,5 @@ public class Application {
         GreetingService greetingService = new GreetingServiceImpl();
         String input = "Marcin";
         System.out.println("Greeting for input " + input + " is " + greetingService.greet(input));
-        System.out.println("Camel greeting for input " + input + " is " + greetingService.greetAsCamel(input));
     }
 }

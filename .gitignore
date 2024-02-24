@@ -34,3 +34,6 @@ build/
 ### jenv ###
 .java-version
 
+### Generated custom JRE
+customjre/
+
