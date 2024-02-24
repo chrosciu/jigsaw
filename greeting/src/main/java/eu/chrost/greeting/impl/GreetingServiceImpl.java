@@ -1,7 +1,7 @@
 package eu.chrost.greeting.impl;
 
-
 import eu.chrost.greeting.GreetingService;
+import eu.chrost.upper.UpperCaseService;
 
 public class GreetingServiceImpl implements GreetingService {
 

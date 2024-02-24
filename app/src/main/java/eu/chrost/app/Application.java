@@ -7,5 +7,6 @@ public class Application {
         GreetingService greetingService = GreetingService.getInstance();
         String input = "Marcin";
         System.out.println("Greeting for input " + input + " is " + greetingService.greet(input));
+        System.out.println("Greeting for input (upper case) " + input + " is " + greetingService.greetUpperCase(input));
     }
 }
