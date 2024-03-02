@@ -16,6 +16,7 @@
     <modules>
         <module>greeting</module>
         <module>app</module>
+        <module>uppercase</module>
     </modules>
 
     <build>
