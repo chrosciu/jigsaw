@@ -10,7 +10,7 @@ public class GreetingServiceImplTest {
     public void shouldAddGivenName() {
         GreetingServiceImpl service = new GreetingServiceImpl();
         String greeting = service.greet("Marcin");
-        Assertions.assertEquals("Hello Marcin!", greeting);
+        Assertions.assertEquals("Hello MARCIN!", greeting);
     }
 
 }

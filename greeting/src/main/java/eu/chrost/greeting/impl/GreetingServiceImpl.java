@@ -2,6 +2,7 @@ package eu.chrost.greeting.impl;
 
 
 import eu.chrost.greeting.GreetingService;
+import eu.chrost.uppercase.UpperCaseService;
 
 public class GreetingServiceImpl implements GreetingService {
     @Override
