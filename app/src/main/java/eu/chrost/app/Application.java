@@ -2,14 +2,16 @@ package eu.chrost.app;
 
 import eu.chrost.greeting.GreetingService;
 
+import java.util.Optional;
 import java.util.ServiceLoader;
 
 public class Application {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         ServiceLoader<GreetingService> greetingServiceLoader = ServiceLoader.load(GreetingService.class);
-        GreetingService greetingService = greetingServiceLoader.findFirst()
-                .orElseThrow(() -> new RuntimeException("GreetingService not found"));
-        String input = "Marcin";
-        System.out.println("Greeting for input " + input + " is " + greetingService.greet(input));
+        Optional<GreetingService> maybeGreetingService = greetingServiceLoader.findFirst();
+        maybeGreetingService.ifPresentOrElse(greetingService -> {
+            String input = "marcin";
+            System.out.println("Greeting for input " + input + " is " + greetingService.greet(input));
+        }, () -> System.out.println("Greeting service not found!"));
     }
 }
